@@ -17,10 +17,46 @@
     padding: 0;
 }
 
+.fa-weight-scale, .fa-github, .fa-linkedin {
+    font-size: 32px;
+    color: var(--cor-container);
+    transition: all 0.3s ease; 
+    padding: 4px;
+}
+
+.fa-weight-scale:hover, .fa-github:hover, .fa-linkedin:hover {
+    transform: scale(1.1);
+    border: 2px solid var(--cor-container);
+    border-radius: 30%;
+    box-shadow: 0 0 5px var(--cor-container); 
+}
+
+
 body{
     background-color: var(--cor-primaria);
 }
 
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header img{
+    width: 100px;
+    color: #fff;
+    background-color: white;
+}
+
+.navbar a{
+    font-size: 18px;
+    margin-left: 20px;
+}
 .container{
     max-width: 640px;
     margin: 40px auto 10px;
@@ -125,3 +161,9 @@ form button:hover{
 .obesidade-leve { background-color: #ff7043; color: #ffffff; }
 .obesidade-media { background-color: #ff5722; color: #ffffff; }
 .obesidade-grave { background-color: #d32f2f; color: #ffffff; font-weight: bold; }
+
+@media (max-width: 768px) { 
+    .container {
+        margin-top: 80px; /* Aumenta o espaço entre os ícones e o main */
+    }
+}
